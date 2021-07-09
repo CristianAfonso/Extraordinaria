@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Busto extends PatrimonialElement{
 
-    public Busto(int[][] localization, String name, String author, int year, String fabricationMethod, String material, String conservationState, ArrayList<String> photoGallery) {
+    public Busto(int localization, String name, String author, int year, String fabricationMethod, String material, String conservationState, String tematica) {
         this.localization = localization;
         this.name = name;
         this.author = author;
@@ -22,6 +22,7 @@ public class Busto extends PatrimonialElement{
         this.material = material;
         this.conservationState = conservationState;
         this.photoGallery = new ArrayList<>();
+        this.tematica=tematica;
     }
     
 

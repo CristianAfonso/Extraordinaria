@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author can97
  */
 public class Graffiti extends PatrimonialElement {
-    public Graffiti(int[][] localization, String name, String author, int year, String fabricationMethod, String material, String conservationState, ArrayList<String> photoGallery) {
+    public Graffiti(int localization, String name, String author, int year, String fabricationMethod, String material, String conservationState,  String tematica) {
         this.localization = localization;
         this.name = name;
         this.author = author;
@@ -21,5 +21,6 @@ public class Graffiti extends PatrimonialElement {
         this.material = material;
         this.conservationState = conservationState;
         this.photoGallery = new ArrayList<>();
+        this.tematica=tematica;
     }
 }

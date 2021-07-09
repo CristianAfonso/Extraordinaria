@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * @author can97
  */
 public abstract class PatrimonialElement {
-    protected int[][] localization;
+    protected int localization;
     protected String name;
     protected String author;
     protected int year;
@@ -21,9 +21,9 @@ public abstract class PatrimonialElement {
     protected String material;
     protected String conservationState;
     protected ArrayList<String> photoGallery;
-    protected String temática;
+    protected String tematica;
 
-    public int[][] getLocalization() {
+    public int getLocalization() {
         return localization;
     }
 
@@ -55,8 +55,8 @@ public abstract class PatrimonialElement {
         return photoGallery;
     }
 
-    public String getTemática() {
-        return temática;
+    public String getTematica() {
+        return tematica;
     }
     
     public void admirar(){

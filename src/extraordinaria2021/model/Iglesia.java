@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Iglesia extends PatrimonialElement {
     private boolean restringido;
-    public Iglesia(int[][] localization, String name, String author, int year, String fabricationMethod, String material, String conservationState, ArrayList<String> photoGallery) {
+    public Iglesia(int localization, String name, String author, int year, String fabricationMethod, String material, String conservationState, String tematica, boolean restringido) {
         this.localization = localization;
         this.name = name;
         this.author = author;
@@ -22,6 +22,8 @@ public class Iglesia extends PatrimonialElement {
         this.material = material;
         this.conservationState = conservationState;
         this.photoGallery = new ArrayList<>();
+        this.tematica=tematica;
+        this.restringido = restringido;
     }
     @Override
     public void sacarFoto(){
