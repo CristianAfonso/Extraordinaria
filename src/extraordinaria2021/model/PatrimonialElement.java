@@ -60,10 +60,11 @@ public abstract class PatrimonialElement {
     }
     
     public void admirar(){
-        System.out.print("Admiras el elemento de patrimonio");
+        System.out.println("Admiras el elemento de patrimonio " + this.getName());
     }
     
     public void sacarFoto(){
+        System.out.println("Sacas una foto a " + this.getName());
         photoGallery.add("Foto " + photoGallery.size());
     }
     
