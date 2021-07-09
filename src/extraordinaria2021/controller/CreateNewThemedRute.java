@@ -35,9 +35,11 @@ public class CreateNewThemedRute implements Command {
             actualPatrimonial = it.next();
             if(actualPatrimonial.getTematica()==theme){
                 newRute.addToRute(actualPatrimonial);
+                
             }
      
         }
+        System.out.println("Se ha creado una nueva ruta con temática " + theme);
     }
     
 }
