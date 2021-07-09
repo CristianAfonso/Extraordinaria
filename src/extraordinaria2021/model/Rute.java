@@ -5,10 +5,23 @@
  */
 package extraordinaria2021.model;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  *
  * @author can97
  */
 public class Rute {
+    private String name;
+    private double distance;
+    private ArrayList<PatrimonialElement> patrimonialElements;
+    
+    public Rute(String name, ArrayList<PatrimonialElement> patrimonialElements){
+        this.name=name;
+        this.patrimonialElements=patrimonialElements;
+    }
     
 }
+
+
